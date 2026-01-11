@@ -7,17 +7,16 @@ import emailjs from "@emailjs/browser"
 const Contact = () => {
     const form = useRef()
     const [isSubmitting, setIsSubmitting] = useState(false)
-    const [status, setStatus] = useState(null) // null | 'success' | 'error'
+    const [status, setStatus] = useState(null)
 
     const sendEmail = (e) => {
         e.preventDefault()
         setIsSubmitting(true)
         setStatus(null)
 
-        // REPLACE THESE WITH YOUR ACTUAL EMAILJS SERVICE ID, TEMPLATE ID, AND PUBLIC KEY
-        const SERVICE_ID = 'YOUR_SERVICE_ID'
-        const TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
-        const PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
+        const SERVICE_ID = 'service_zumvhbc'
+        const TEMPLATE_ID = 'template_nmtjg0p'
+        const PUBLIC_KEY = 'ea_Ykqi8Gx_-4FaGu'
 
         emailjs
             .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
@@ -43,9 +42,9 @@ const Contact = () => {
             <div className="max-w-[600px] mx-auto space-y-12">
 
                 {/* Header */}
-                <div className="text-center space-y-4">
-                    <h2 className="text-[32px] md:text-[40px] font-bold text-[#111111] dark:text-white tracking-tight">
-                        Get in Touch
+                <div className="text-left space-y-4">
+                    <h2 className="font-serif italic font-normal text-[48px] md:text-[64px] text-[#111111] dark:text-white tracking-[-0.02em] leading-[1.1]">
+                        Contact
                     </h2>
                     <p className="text-[#6b6b6b] dark:text-[#888888] text-[17px] leading-relaxed">
                         Have a question or want to work together? Send me a message!
@@ -63,7 +62,7 @@ const Contact = () => {
                                 type="email"
                                 placeholder="john@example.com"
                                 required
-                                className="h-12 rounded-xl border-gray-200 dark:border-[#333333] bg-white dark:bg-[#111111] text-[#111111] dark:text-white placeholder:text-gray-400 focus-visible:ring-1 focus-visible:ring-[#111111] dark:focus-visible:ring-white"
+                                className="h-12 rounded-xl border-gray-200 dark:border-[#333333] bg-white dark:bg-[#111111] text-[#111111] dark:text-white placeholder:text-gray-400 focus-visible:ring-1 focus-visible:ring-[#111111] dark:focus-visible:ring-white shadow-[0_2px_10px_rgba(0,0,0,0.03)]"
                             />
                         </div>
                         <div className="space-y-2">
@@ -73,7 +72,7 @@ const Contact = () => {
                                 name="company_name"
                                 type="text"
                                 placeholder="Acme Corp"
-                                className="h-12 rounded-xl border-gray-200 dark:border-[#333333] bg-white dark:bg-[#111111] text-[#111111] dark:text-white placeholder:text-gray-400 focus-visible:ring-1 focus-visible:ring-[#111111] dark:focus-visible:ring-white"
+                                className="h-12 rounded-xl border-gray-200 dark:border-[#333333] bg-white dark:bg-[#111111] text-[#111111] dark:text-white placeholder:text-gray-400 focus-visible:ring-1 focus-visible:ring-[#111111] dark:focus-visible:ring-white shadow-[0_2px_10px_rgba(0,0,0,0.03)]"
                             />
                         </div>
                     </div>
@@ -84,7 +83,7 @@ const Contact = () => {
                             id="message"
                             name="message"
                             placeholder="Type your message here..."
-                            className="min-h-[150px] rounded-xl border-gray-200 dark:border-[#333333] bg-white dark:bg-[#111111] text-[#111111] dark:text-white placeholder:text-gray-400 focus-visible:ring-1 focus-visible:ring-[#111111] dark:focus-visible:ring-white resize-none"
+                            className="min-h-[150px] rounded-xl border-gray-200 dark:border-[#333333] bg-white dark:bg-[#111111] text-[#111111] dark:text-white placeholder:text-gray-400 focus-visible:ring-1 focus-visible:ring-[#111111] dark:focus-visible:ring-white resize-none shadow-[0_2px_10px_rgba(0,0,0,0.03)]"
                             required
                         />
                     </div>

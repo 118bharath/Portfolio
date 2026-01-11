@@ -9,6 +9,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Quicksand', 'sans-serif'],
+				serif: ['"Instrument Serif"', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -50,9 +50,9 @@ const Footer = () => {
 
                 {/* Middle: Quote */}
                 <div className="text-center max-w-3xl mx-auto">
-                    <p className="text-lg md:text-xl lg:text-2xl text-[#111111] dark:text-white font-light leading-relaxed">
+                    <p className="font-serif italic text-xl md:text-2xl lg:text-3xl text-[#111111] dark:text-white font-normal leading-relaxed">
                         <span className="text-[#111111] dark:text-white">"Preparation can take you only so far. After that, you have to take a few leaps of faith."</span>
-                        <span className="block mt-4 text-[#6b6b6b] dark:text-[#888888] text-base md:text-lg">- Michael Scofield, Television Character</span>
+                        <span className="block mt-4 font-sans not-italic text-[#6b6b6b] dark:text-[#888888] text-base md:text-lg font-normal">- Michael Scofield, Television Character</span>
                     </p>
 
                     <div className="flex justify-center gap-2 mt-12">

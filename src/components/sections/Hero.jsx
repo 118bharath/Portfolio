@@ -43,7 +43,7 @@ const Hero = () => {
         <section
             id="hero"
             ref={containerRef}
-            className="min-h-[calc(100vh-6rem)] flex items-center bg-white dark:bg-[#050505] relative overflow-hidden pt-[100px] pb-[60px] px-4 md:px-[60px]"
+            className="min-h-[calc(100vh-6rem)] flex items-center bg-white dark:bg-[#050505] relative overflow-hidden pt-[45px] pb-[40px] px-4 md:px-[60px]"
         >
             <div className="flex flex-col items-start justify-center w-full max-w-[1400px] mx-auto text-left">
                 {/* Badge */}
@@ -51,22 +51,23 @@ const Hero = () => {
                     Where clean design meets reliable engineering.
                 </div>
 
-                {/* Heading */}
-                <h1 className="font-sans font-semibold text-[#111111] dark:text-white tracking-normal leading-[1.1] text-[clamp(24px,8vw,72px)] mb-6 break-words w-full">
+                {/* Heading - Large serif like reference */}
+                <h1 className="font-serif font-normal text-[#111111] dark:text-white tracking-[-0.02em] leading-[1.05] text-[clamp(48px,12vw,100px)] mb-4 break-words w-full">
                     <div className="overflow-hidden">
-                        <div className="reveal-line">Engineering intuitive frontends</div>
-                    </div>
-                    <div className="overflow-hidden">
-                        <div className="reveal-line">and robust infrastructure</div>
-                    </div>
-                    <div className="overflow-hidden">
-                        <div className="reveal-line">that scales</div>
+                        <div className="reveal-line">Sai Bharath</div>
                     </div>
                 </h1>
 
-                {/* Subheading */}
-                <p className="hero-sub text-[#6b6b6b] dark:text-[#888888] text-[clamp(16px,4vw,18px)] leading-[1.6] font-medium max-w-[640px] mb-10">
-                    I’m a developer with a background in computer science, My work blends UI craftsmanship with system-level thinking — delivering applications that look good, work fast, scale smoothly, and stay maintainable.
+                {/* Subtitle - Italic serif like reference */}
+                <h2 className="font-serif italic font-normal text-[#111111] dark:text-white tracking-[-0.01em] leading-[1.3] text-[clamp(20px,4vw,32px)] mb-8">
+                    <div className="overflow-hidden">
+                        <div className="reveal-line">Full Stack Developer & UI Engineer</div>
+                    </div>
+                </h2>
+
+                {/* Subheading - Sans-serif body text */}
+                <p className="hero-sub text-[#6b6b6b] dark:text-[#888888] text-[17px] md:text-[19px] leading-[1.7] font-normal max-w-[640px] mb-10">
+                    I'm a developer with a background in computer science. My work blends UI craftsmanship with system-level thinking — delivering applications that look good, work fast, scale smoothly, and stay maintainable.
                 </p>
 
                 {/* Resume Button */}

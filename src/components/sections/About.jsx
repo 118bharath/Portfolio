@@ -7,21 +7,20 @@ gsap.registerPlugin(ScrollTrigger)
 
 const About = () => {
     const containerRef = useRef(null)
-    const text = "I’m someone who loves turning ideas into things that actually work, whether it’s a simple concept or a complex problem that needs patience and clarity. I’m driven by curiosity, always trying to understand how things fit together and how they can be made better. I enjoy building with intention, staying calm under pressure, and finding thoughtful solutions even when the path isn’t obvious. At my core, I value learning, improving, and creating work that genuinely feels meaningful."
 
     useGSAP(() => {
-        const words = containerRef.current.querySelectorAll(".word")
+        const paragraphs = containerRef.current.querySelectorAll(".about-paragraph")
 
-        gsap.fromTo(words,
+        gsap.fromTo(paragraphs,
             {
-                y: 50,
+                y: 30,
                 opacity: 0
             },
             {
                 y: 0,
                 opacity: 1,
                 duration: 0.8,
-                stagger: 0.02,
+                stagger: 0.15,
                 ease: "power3.out",
                 scrollTrigger: {
                     trigger: containerRef.current,
@@ -34,23 +33,35 @@ const About = () => {
 
     return (
         <section id="about" className="bg-white dark:bg-[#050505] py-[100px] px-4 md:px-[60px]">
-            <div ref={containerRef} className="w-full max-w-[1400px] mx-auto space-y-16">
-                {/* Section Header */}
-                <div className="text-center space-y-4">
-                    <h2 className="text-[32px] md:text-[40px] font-bold text-[#111111] dark:text-white tracking-tight">
-                        About Me
+            <div ref={containerRef} className="w-full max-w-[1400px] mx-auto space-y-12">
+                {/* Section Header - Serif italic like reference */}
+                <div className="text-left">
+                    <h2 className="font-serif italic font-normal text-[48px] md:text-[64px] text-[#111111] dark:text-white tracking-[-0.02em] leading-[1.1]">
+                        About
                     </h2>
                 </div>
 
-                {/* Animated Text */}
-                <div className="flex flex-wrap justify-start gap-x-2 gap-y-1 leading-[1.6]">
-                    {text.split(" ").map((word, i) => (
-                        <div key={i} className="overflow-hidden">
-                            <span className="word inline-block font-sans text-[#111111] dark:text-white text-[19px] md:text-[24px]">
-                                {word}
-                            </span>
-                        </div>
-                    ))}
+                {/* 2-Column Grid Layout */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8">
+                    {/* Left Column */}
+                    <div className="space-y-8">
+                        <p className="about-paragraph font-sans text-[16px] md:text-[17px] text-[#111111] dark:text-white leading-[1.7]">
+                            Over the past few years, I've been building scalable web applications and intuitive user interfaces. I specialize in React, Node.js, and modern JavaScript ecosystems, with a strong focus on performance and clean architecture.
+                        </p>
+                        <p className="about-paragraph font-sans text-[16px] md:text-[17px] text-[#111111] dark:text-white leading-[1.7]">
+                            At my core, I'm driven by curiosity and the desire to solve complex problems with elegant solutions. I enjoy building systems that are both technically sound and genuinely useful.
+                        </p>
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="space-y-8">
+                        <p className="about-paragraph font-sans text-[16px] md:text-[17px] text-[#111111] dark:text-white leading-[1.7]">
+                            I excel at creating seamless user experiences, automated workflows, and intelligent systems that eliminate manual work and amplify impact.
+                        </p>
+                        <p className="about-paragraph font-sans text-[16px] md:text-[17px] text-[#111111] dark:text-white leading-[1.7]">
+                            Outside of work, I'm continuously learning new technologies, contributing to open source, and mentoring aspiring developers in web development and system design.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

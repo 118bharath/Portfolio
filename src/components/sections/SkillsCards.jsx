@@ -77,11 +77,11 @@ export default function Skills() {
             <div className="max-w-[1400px] mx-auto space-y-16">
 
                 {/* Header */}
-                <div className="text-center space-y-4">
-                    <h2 className="text-[32px] md:text-[40px] font-bold text-[#111111] dark:text-white tracking-tight">
-                        The Stack Behind the Work
+                <div className="text-left space-y-4">
+                    <h2 className="font-serif italic font-normal text-[48px] md:text-[64px] text-[#111111] dark:text-white tracking-[-0.02em] leading-[1.1]">
+                        Skills
                     </h2>
-                    <p className="text-[#6b6b6b] dark:text-[#888888] text-[17px] max-w-2xl mx-auto">
+                    <p className="text-[#6b6b6b] dark:text-[#888888] text-[17px] max-w-2xl">
                         A curated set of technologies that powers everything I build, optimize, and iterate on.
                     </p>
                 </div>
@@ -215,7 +215,7 @@ const Card = ({ className, children }) => {
 
 const CardTitle = ({ children, className }) => {
     return (
-        <h3 className={cn("text-xl font-bold text-[#111111] dark:text-white py-2", className)}>
+        <h3 className={cn("font-serif text-2xl font-normal text-[#111111] dark:text-white py-2", className)}>
             {children}
         </h3>
     )

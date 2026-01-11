@@ -108,9 +108,9 @@ const Projects = () => {
         <section id="projects" className="bg-white dark:bg-[#050505] py-[60px] px-4 md:px-[70px] lg:px-[100px]">
             <div className="w-full max-w-[1400px] mx-auto space-y-16">
                 {/* Section Header */}
-                <div className="text-center space-y-4">
-                    <h2 className="text-[32px] md:text-[40px] font-bold text-[#111111] dark:text-white tracking-tight">
-                        My Projects
+                <div className="text-left space-y-4">
+                    <h2 className="font-serif italic font-normal text-[48px] md:text-[64px] text-[#111111] dark:text-white tracking-[-0.02em] leading-[1.1]">
+                        Projects
                     </h2>
                 </div>
 
@@ -147,7 +147,7 @@ const Projects = () => {
 
                                 {/* Project Info Grid */}
                                 <div className="flex flex-col gap-6">
-                                    <h3 className="text-[#111111] dark:text-white text-[24px] md:text-[32px] font-semibold tracking-tight">
+                                    <h3 className="font-serif text-[#111111] dark:text-white text-[28px] md:text-[36px] font-normal tracking-[-0.01em]">
                                         {project.title}
                                     </h3>
 
@@ -192,7 +192,7 @@ const Projects = () => {
                     <div className="hidden lg:block relative">
                         <div className="sticky top-[120px] h-fit p-8 rounded-[24px] border border-gray-200 dark:border-[#333333] bg-white dark:bg-[#050505] shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
                             <div className="space-y-6">
-                                <h4 className="text-[#111111] dark:text-white text-[22px] font-medium border-b border-gray-100 dark:border-[#333333] pb-4">
+                                <h4 className="font-serif italic text-[#111111] dark:text-white text-[24px] font-normal border-b border-gray-100 dark:border-[#333333] pb-4">
                                     Skills used
                                 </h4>
 
