@@ -14,14 +14,14 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: "Bliss Bowl",
+            title: "Savorya",
             description: "A comprehensive online shopping experience designed for scalability and user engagement.",
             image: BlissBowl,
             skills: ["React", "Tailwind CSS", "Node.js", "MongoDB", "ExpressJS", "Redux Toolkit", "Git", "Postman"],
             event: "Freelance",
             year: "2024",
             liveUrl: "https://swiggy-clone-ebon-delta.vercel.app/",
-            githubUrl: "https://github.com/118bharath/Swiggy-Clone"
+            githubUrl: "https://github.com/118bharath/Savorya"
         },
         {
             id: 2,
@@ -105,7 +105,7 @@ const Projects = () => {
     }, [activeProject])
 
     return (
-        <section id="projects" className="bg-white dark:bg-[#050505] py-[60px] px-4 md:px-[70px] lg:px-[100px]">
+        <section id="projects" className="bg-[#FDF8F0] dark:bg-[#050505] py-[60px] px-4 md:px-[70px] lg:px-[100px]">
             <div className="w-full max-w-[1400px] mx-auto space-y-16">
                 {/* Section Header */}
                 <div className="text-left space-y-4">

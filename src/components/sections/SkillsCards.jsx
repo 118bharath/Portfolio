@@ -73,7 +73,7 @@ const CARDS = [
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-[80px] px-6 md:px-12 lg:px-24 bg-white dark:bg-[#050505]">
+        <section id="skills" className="py-[80px] px-6 md:px-12 lg:px-24 bg-[#FDF8F0] dark:bg-[#050505]">
             <div className="max-w-[1400px] mx-auto space-y-16">
 
                 {/* Header */}

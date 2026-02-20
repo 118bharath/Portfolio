@@ -38,7 +38,7 @@ const Contact = () => {
     }
 
     return (
-        <section id="contact" className="py-[60px] md:py-[80px] px-6 md:px-12 lg:px-24 bg-white dark:bg-[#050505]">
+        <section id="contact" className="py-[60px] md:py-[80px] px-6 md:px-12 lg:px-24 bg-[#FDF8F0] dark:bg-[#050505]">
             <div className="max-w-[600px] mx-auto space-y-12">
 
                 {/* Header */}

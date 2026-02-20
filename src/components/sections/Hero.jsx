@@ -43,12 +43,12 @@ const Hero = () => {
         <section
             id="hero"
             ref={containerRef}
-            className="min-h-[calc(100vh-6rem)] flex items-center bg-white dark:bg-[#050505] relative overflow-hidden pt-[45px] pb-[40px] px-4 md:px-[60px]"
+            className="min-h-[calc(100vh-6rem)] flex items-center bg-[#FDF8F0] dark:bg-[#050505] relative overflow-hidden pt-[45px] pb-[40px] px-4 md:px-[60px]"
         >
             <div className="flex flex-col items-start justify-center w-full max-w-[1400px] mx-auto text-left">
                 {/* Badge */}
-                <div className="hero-badge mb-6 inline-flex items-center px-[14px] py-[8px] sm:px-[18px] sm:py-[10px] rounded-[999px] border border-[#EDEDED] dark:border-[#333333] bg-[#FCFCFC] dark:bg-[#111111] text-[#6b6b6b] dark:text-[#888888] text-[12px] sm:text-[14px] leading-none">
-                    Where clean design meets reliable engineering.
+                <div className="hero-badge mb-6 inline-flex items-center px-[14px] py-[8px] sm:px-[18px] sm:py-[10px] rounded-[999px] border border-black/40 dark:border-white/30 bg-[#F0F0F0] dark:bg-[#1a1a1a] text-[#6b6b6b] dark:text-[#888888] text-[12px] sm:text-[14px] leading-none">
+                    Where clean architecture meets scalable engineering.
                 </div>
 
                 {/* Heading - Large serif like reference */}
@@ -61,13 +61,13 @@ const Hero = () => {
                 {/* Subtitle - Italic serif like reference */}
                 <h2 className="font-serif italic font-normal text-[#111111] dark:text-white tracking-[-0.01em] leading-[1.3] text-[clamp(20px,4vw,32px)] mb-8">
                     <div className="overflow-hidden">
-                        <div className="reveal-line">Full Stack Developer & UI Engineer</div>
+                        <div className="reveal-line">Full Stack Developer with Backend & DevOps Focus</div>
                     </div>
                 </h2>
 
                 {/* Subheading - Sans-serif body text */}
                 <p className="hero-sub text-[#6b6b6b] dark:text-[#888888] text-[17px] md:text-[19px] leading-[1.7] font-normal max-w-[640px] mb-10">
-                    I'm a developer with a background in computer science. My work blends UI craftsmanship with system-level thinking — delivering applications that look good, work fast, scale smoothly, and stay maintainable.
+                    Full stack developer with a backend-first mindset. I build clean APIs and scalable systems that are reliable and easy to maintain.
                 </p>
 
                 {/* Resume Button */}

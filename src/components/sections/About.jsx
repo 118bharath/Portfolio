@@ -32,7 +32,7 @@ const About = () => {
     }, { scope: containerRef })
 
     return (
-        <section id="about" className="bg-white dark:bg-[#050505] py-[100px] px-4 md:px-[60px]">
+        <section id="about" className="bg-[#FDF8F0] dark:bg-[#050505] py-[100px] px-4 md:px-[60px]">
             <div ref={containerRef} className="w-full max-w-[1400px] mx-auto space-y-12">
                 {/* Section Header - Serif italic like reference */}
                 <div className="text-left">
@@ -46,20 +46,20 @@ const About = () => {
                     {/* Left Column */}
                     <div className="space-y-8">
                         <p className="about-paragraph font-sans text-[16px] md:text-[17px] text-[#111111] dark:text-white leading-[1.7]">
-                            Over the past few years, I've been building scalable web applications and intuitive user interfaces. I specialize in React, Node.js, and modern JavaScript ecosystems, with a strong focus on performance and clean architecture.
+                            I build backend-focused applications using both the Java (Spring Boot) stack and the MERN ecosystem. I enjoy designing clean REST APIs, optimizing databases, and building reliable systems that scale well and stay easy to maintain.
                         </p>
                         <p className="about-paragraph font-sans text-[16px] md:text-[17px] text-[#111111] dark:text-white leading-[1.7]">
-                            At my core, I'm driven by curiosity and the desire to solve complex problems with elegant solutions. I enjoy building systems that are both technically sound and genuinely useful.
+                            I believe good software isn’t just about writing code — it’s about solving the right problems the right way. I value clarity in communication, structured thinking, and staying calm while debugging complex issues. Whether working independently or collaborating in a team, I focus on understanding the bigger picture before jumping into solutions.
                         </p>
                     </div>
 
                     {/* Right Column */}
                     <div className="space-y-8">
                         <p className="about-paragraph font-sans text-[16px] md:text-[17px] text-[#111111] dark:text-white leading-[1.7]">
-                            I excel at creating seamless user experiences, automated workflows, and intelligent systems that eliminate manual work and amplify impact.
+                            I’m naturally curious about how systems work under the hood. I enjoy thinking about scalability, performance trade-offs, and clean architecture decisions that make applications future-proof. For me, writing code isn’t just about making it run — it’s about making it efficient, readable, and built to handle growth.
                         </p>
                         <p className="about-paragraph font-sans text-[16px] md:text-[17px] text-[#111111] dark:text-white leading-[1.7]">
-                            Outside of work, I'm continuously learning new technologies, contributing to open source, and mentoring aspiring developers in web development and system design.
+                            Outside of projects, I continuously explore new tools and concepts — from improving my system design thinking to experimenting with DevOps workflows and automation. I regularly practice problem-solving, refine my fundamentals, and stay updated with evolving technologies to keep sharpening my engineering mindset.
                         </p>
                     </div>
                 </div>

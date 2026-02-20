@@ -8,7 +8,7 @@ const Footer = () => {
     }
 
     return (
-        <footer className="bg-white dark:bg-[#050505] text-[#111111] dark:text-white py-20 px-6 md:px-12 lg:px-24 border-t border-gray-100 dark:border-[#111111]">
+        <footer className="bg-[#FDF8F0] dark:bg-[#050505] text-[#111111] dark:text-white py-20 px-6 md:px-12 lg:px-24 border-t border-gray-100 dark:border-[#111111]">
             <div className="max-w-[1400px] mx-auto flex flex-col gap-20">
 
                 {/* Top Row */}
